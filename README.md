@@ -24,4 +24,5 @@
 
 - Landing Page
 - Portfolio
-- صفحات ریسپانسیو
+- Responsive pages
+- Store shop
