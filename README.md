@@ -22,7 +22,6 @@
 
 پروژه‌های کامل‌تری که طراحی کرده‌ام، مانند:
 
-- Landing Page
 - Portfolio
+- Landing Page
 - Responsive pages
-- Store shop
