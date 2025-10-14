@@ -23,5 +23,4 @@
 پروژه‌های کامل‌تری که طراحی کرده‌ام، مانند:
 
 - Portfolio
-- Landing Page
 - Responsive pages
