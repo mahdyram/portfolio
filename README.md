@@ -22,6 +22,6 @@
 
 پروژه‌های کامل‌تری که طراحی کرده‌ام، مانند:
 
-- Landing Page
 - Portfolio
-- صفحات ریسپانسیو
+- Responsive pages
+- otc
