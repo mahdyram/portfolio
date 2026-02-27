@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -14,8 +14,8 @@
     <title>mahdi's Portfolio | Frontend Developer</title>
     <link rel="icon" href="./images/p.png" type="image/svg+xml" />
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
-      
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
+
       * {
         margin: 0;
         padding: 0;
@@ -23,29 +23,40 @@
       }
 
       body {
-        font-family: 'Inter', sans-serif;
+        font-family: "Inter", sans-serif;
         background: #0a0a0a;
         color: #ffffff;
         line-height: 1.6;
         position: relative;
       }
 
-      /* انیمیشن پس زمینه */
       body::before {
-        content: '';
+        content: "";
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
-        background: radial-gradient(circle at 20% 20%, rgba(100, 108, 255, 0.15) 0%, transparent 40%),
-                    radial-gradient(circle at 80% 80%, rgba(255, 100, 150, 0.1) 0%, transparent 40%),
-                    radial-gradient(circle at 40% 60%, rgba(255, 200, 100, 0.1) 0%, transparent 50%);
+        background:
+          radial-gradient(
+            circle at 20% 20%,
+            rgba(100, 108, 255, 0.15) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(255, 100, 150, 0.1) 0%,
+            transparent 40%
+          ),
+          radial-gradient(
+            circle at 40% 60%,
+            rgba(255, 200, 100, 0.1) 0%,
+            transparent 50%
+          );
         z-index: -1;
         pointer-events: none;
       }
 
-      /* هدر با طراحی مدرن */
       header {
         text-align: center;
         padding: 100px 20px 60px;
@@ -55,7 +66,7 @@
       }
 
       header::after {
-        content: '';
+        content: "";
         position: absolute;
         bottom: 0;
         left: 50%;
@@ -91,7 +102,6 @@
         padding: 40px 30px;
       }
 
-      /* طراحی بخش پروژه‌ها با کارت‌های مدرن */
       .projects {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -110,7 +120,7 @@
       }
 
       .project-card::before {
-        content: '';
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
@@ -147,13 +157,15 @@
       }
 
       .project-info h3::after {
-        content: '→';
+        content: "→";
         position: absolute;
         right: -30px;
         top: 50%;
         transform: translateY(-50%);
         opacity: 0;
-        transition: opacity 0.3s ease, right 0.3s ease;
+        transition:
+          opacity 0.3s ease,
+          right 0.3s ease;
         color: #646cff;
         font-size: 1.4rem;
       }
@@ -170,7 +182,6 @@
         line-height: 1.7;
       }
 
-      /* استایل برای آیکون‌ها و برچسب‌ها */
       .project-info p span {
         display: inline-flex;
         align-items: center;
@@ -181,7 +192,6 @@
         font-size: 1.1rem;
       }
 
-      /* برچسب سطح سختی */
       .fas.fa-graduation-cap,
       .fas.fa-seedling,
       .fas.fa-fire {
@@ -189,25 +199,45 @@
         margin: 0 2px;
       }
 
-      .fas.fa-graduation-cap { color: #646cff; }
-      .fas.fa-seedling { color: #4caf50; }
-      .fas.fa-fire { color: #ff6b6b; }
+      .fas.fa-graduation-cap {
+        color: #646cff;
+      }
+      .fas.fa-seedling {
+        color: #4caf50;
+      }
+      .fas.fa-fire {
+        color: #ff6b6b;
+      }
 
-      /* آیکون responsive */
-      .fa-check { color: #4caf50; }
-      .fa-times { color: #ff6b6b; }
+      .fa-check {
+        color: #4caf50;
+      }
+      .fa-times {
+        color: #ff6b6b;
+      }
 
-      /* آیکون ابزارها */
       .fab {
         margin: 0 3px;
         opacity: 0.8;
         transition: opacity 0.3s ease;
       }
 
-      .fab.fa-html5:hover { color: #e44d26; opacity: 1; }
-      .fab.fa-css3-alt:hover { color: #264de4; opacity: 1; }
-      .fab.fa-js:hover { color: #f7df1e; opacity: 1; }
-      .fab.fa-react:hover { color: #61dafb; opacity: 1; }
+      .fab.fa-html5:hover {
+        color: #e44d26;
+        opacity: 1;
+      }
+      .fab.fa-css3-alt:hover {
+        color: #264de4;
+        opacity: 1;
+      }
+      .fab.fa-js:hover {
+        color: #f7df1e;
+        opacity: 1;
+      }
+      .fab.fa-react:hover {
+        color: #61dafb;
+        opacity: 1;
+      }
 
       .project-info a {
         display: inline-flex;
@@ -226,7 +256,7 @@
       }
 
       .project-info a::after {
-        content: '→';
+        content: "→";
         font-size: 1.2rem;
         transition: transform 0.3s ease;
       }
@@ -241,7 +271,6 @@
         transform: translateX(5px);
       }
 
-      /* فوتر مدرن */
       footer {
         margin-top: 120px;
         padding: 40px 20px;
@@ -291,7 +320,6 @@
         box-shadow: 0 10px 20px rgba(100, 108, 255, 0.3);
       }
 
-      /* برچسب سطح پروژه */
       .project-info p {
         display: flex;
         flex-wrap: wrap;
@@ -311,7 +339,6 @@
         border: 1px solid rgba(255, 255, 255, 0.05);
       }
 
-      /* استایل برای موبایل */
       @media (max-width: 768px) {
         header h1 {
           font-size: 2.5rem;
@@ -348,14 +375,12 @@
         }
       }
 
-      /* استایل برای تبلت */
       @media (min-width: 769px) and (max-width: 1024px) {
         .projects {
           grid-template-columns: repeat(2, 1fr);
         }
       }
 
-      /* انیمیشن fade-in برای کارت‌ها */
       @keyframes fadeIn {
         from {
           opacity: 0;
@@ -372,24 +397,55 @@
         opacity: 0;
       }
 
-      .project-card:nth-child(1) { animation-delay: 0.1s; }
-      .project-card:nth-child(2) { animation-delay: 0.2s; }
-      .project-card:nth-child(3) { animation-delay: 0.3s; }
-      .project-card:nth-child(4) { animation-delay: 0.4s; }
-      .project-card:nth-child(5) { animation-delay: 0.5s; }
-      .project-card:nth-child(6) { animation-delay: 0.6s; }
-      .project-card:nth-child(7) { animation-delay: 0.7s; }
-      .project-card:nth-child(8) { animation-delay: 0.8s; }
-      .project-card:nth-child(9) { animation-delay: 0.9s; }
-      .project-card:nth-child(10) { animation-delay: 1s; }
-      .project-card:nth-child(11) { animation-delay: 1.1s; }
-      .project-card:nth-child(12) { animation-delay: 1.2s; }
-      .project-card:nth-child(13) { animation-delay: 1.3s; }
-      .project-card:nth-child(14) { animation-delay: 1.4s; }
-      .project-card:nth-child(15) { animation-delay: 1.5s; }
-      .project-card:nth-child(16) { animation-delay: 1.6s; }
+      .project-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .project-card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .project-card:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+      .project-card:nth-child(4) {
+        animation-delay: 0.4s;
+      }
+      .project-card:nth-child(5) {
+        animation-delay: 0.5s;
+      }
+      .project-card:nth-child(6) {
+        animation-delay: 0.6s;
+      }
+      .project-card:nth-child(7) {
+        animation-delay: 0.7s;
+      }
+      .project-card:nth-child(8) {
+        animation-delay: 0.8s;
+      }
+      .project-card:nth-child(9) {
+        animation-delay: 0.9s;
+      }
+      .project-card:nth-child(10) {
+        animation-delay: 1s;
+      }
+      .project-card:nth-child(11) {
+        animation-delay: 1.1s;
+      }
+      .project-card:nth-child(12) {
+        animation-delay: 1.2s;
+      }
+      .project-card:nth-child(13) {
+        animation-delay: 1.3s;
+      }
+      .project-card:nth-child(14) {
+        animation-delay: 1.4s;
+      }
+      .project-card:nth-child(15) {
+        animation-delay: 1.5s;
+      }
+      .project-card:nth-child(16) {
+        animation-delay: 1.6s;
+      }
 
-      /* استایل اسکرول بار */
       ::-webkit-scrollbar {
         width: 10px;
       }
@@ -409,7 +465,6 @@
     </style>
   </head>
   <body>
-    <!-- محتوای شما دقیقاً مثل قبل باقی می‌مونه -->
     <header>
       <h1>Welcome to My Portfolio</h1>
       <p>A collection of my frontend projects</p>
@@ -417,7 +472,6 @@
 
     <div class="container">
       <section class="projects">
-        <!-- تمام پروژه‌ها دقیقاً مثل قبل باقی می‌مونن -->
         <div class="project-card">
           <div class="project-info">
             <h3>SmartShop</h3>
@@ -445,7 +499,6 @@
           </div>
         </div>
 
-        <!-- بقیه پروژه‌ها دقیقاً مثل قبل کپی بشن -->
         <div class="project-card">
           <div class="project-info">
             <h3>VendorPanel</h3>
